@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import {environment} from '../../../environments/environment';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Album} from '../../models/Album';
 import {Image} from '../../models/Image';
 import {FileForm} from '../../models/file-form';
 import {MultiFileForm} from '../../models/multi-file-form';
+import {environment} from '../../../environments/environment.prod';
 
 const httpOptions: any    = {
   headers: new HttpHeaders({

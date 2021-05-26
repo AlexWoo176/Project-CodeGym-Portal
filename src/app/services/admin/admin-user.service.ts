@@ -2,10 +2,9 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, Subject} from 'rxjs';
 import {User} from '../../models/User';
-import {Diary} from '../../models/Diary';
 import {AdminReportForm} from '../../models/AdminReportForm';
 
-const apiUrl = 'http://localhost:8080/api/sdu/';
+const apiUrl = 'https://penzu-codegym.herokuapp.com/';
 
 @Injectable({
   providedIn: 'root'

@@ -1,3 +1,17 @@
 export const environment = {
-  production: true
+  production: true,
+  loginUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/login',
+  signupUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/register',
+  updateProfileUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/update-profile',
+  updatePasswordUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/update-password',
+  userAvatarUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/user-avatar/',
+  userUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/user/',
+  diaryUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/diary/',
+  diaryUploadFileUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/diary-file/',
+  tagUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/tag/',
+  commentUrl: 'localhost:8080/api/sdu/comments',
+  albumUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/album',
+  albumUploadAvatarUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/album-avatar',
+  imageUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/image',
+  albumUploadImageUrl: 'https://penzu-codegym.herokuapp.com//api/sdu/album-add-image',
 };

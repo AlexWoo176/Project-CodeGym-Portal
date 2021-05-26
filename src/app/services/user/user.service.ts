@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {environment} from '../../../environments/environment';
 import {Observable} from 'rxjs';
 import {FileForm} from '../../models/file-form';
 import {User} from '../../models/User';
@@ -8,6 +7,7 @@ import {Diary} from '../../models/Diary';
 import {SearchUserByName} from '../../models/search-user-by-name';
 import {ForgotPassword} from '../../models/ForgotPassword';
 import {AdminReportForm} from '../../models/AdminReportForm';
+import {environment} from '../../../environments/environment.prod';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -17,6 +17,9 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
+  // private sduUserUrl = environment.userUrl;
+  // private sduUserAvatarUrl = environment.userAvatarUrl;
+
   private sduUserUrl = environment.userUrl;
   private sduUserAvatarUrl = environment.userAvatarUrl;
 

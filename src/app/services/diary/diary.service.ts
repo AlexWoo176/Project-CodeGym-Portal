@@ -2,14 +2,14 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Diary} from '../../models/Diary';
 import {Observable} from 'rxjs';
-import {environment} from '../../../environments/environment';
 import {Pagination} from '../../models/pagination';
 import {FileForm} from '../../models/file-form';
 import {SearchDiaryByTitleAndUserId} from '../../models/search-diary-by-title-and-user-id';
 import {SearchDiaryByTagAndTitle} from '../../models/search-diary-by-tag-and-title';
 import {ShareDiaryByEmail} from '../../models/share-diary-by-email';
+import {environment} from '../../../environments/environment.prod';
 
-const apiUrl = 'http://localhost:8080/api/sdu';
+const apiUrl = 'https://penzu-codegym.herokuapp.com/';
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
