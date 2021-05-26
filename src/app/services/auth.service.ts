@@ -17,11 +17,6 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AuthService {
-  // private svLoginUrl = environment.loginUrl;
-  // private svSignUpUrl = environment.signupUrl;
-  // private svUpdateProfileUrl = environment.updateProfileUrl;
-  // private svUpdatePasswordUrl = environment.updatePasswordUrl;
-
   private svLoginUrl = environment.loginUrl;
   private svSignUpUrl = environment.signupUrl;
   private svUpdateProfileUrl = environment.updateProfileUrl;

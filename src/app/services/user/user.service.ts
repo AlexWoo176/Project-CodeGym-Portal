@@ -17,8 +17,6 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
-  // private sduUserUrl = environment.userUrl;
-  // private sduUserAvatarUrl = environment.userAvatarUrl;
 
   private sduUserUrl = environment.userUrl;
   private sduUserAvatarUrl = environment.userAvatarUrl;
