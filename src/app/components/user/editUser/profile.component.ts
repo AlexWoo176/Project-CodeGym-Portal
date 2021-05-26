@@ -42,6 +42,7 @@ export class ProfileComponent implements OnInit {
   submitted = false;
   messageCheckCurrentPass: string;
   currentPassMatch: boolean;
+  messageNotFoundCurrentPass: string;
 
   constructor(
     private token: TokenStorageService,
@@ -111,7 +112,6 @@ export class ProfileComponent implements OnInit {
             this.error = updatePasswordFail;
             this.passForm.reset();
           }
-
         }
       );
     }
